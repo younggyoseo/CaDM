@@ -17,24 +17,30 @@ This repository contains code for the paper
 
 1. Vanilla DM + CaDM
 ```
-python -m run_scripts.run_cadm_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 --normalize_flag --ensemble_size 1 --n_particles 1 --deterministic_flag 1 --history_length 10 --future_length 10 --seed 0
+python -m run_scripts.run_cadm_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 \
+--normalize_flag --ensemble_size 1 --n_particles 1 --deterministic_flag 1 --history_length 10 \
+--future_length 10 --seed 0
 ```
 
 2. PE-TS + CaDM
 ```
-python -m run_scripts.run_cadm_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 --normalize_flag --ensemble_size 5 --n_particles 20 --deterministic_flag 0 --history_length 10 --future_length 10 --seed 0
+python -m run_scripts.run_cadm_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 \
+--normalize_flag --ensemble_size 5 --n_particles 20 --deterministic_flag 0 --history_length 10 \
+--future_length 10 --seed 0
 ```
 
 ### Baselines
 
 1. Vanilla DM
 ```
-python -m run_scripts.run_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 --normalize_flag --ensemble_size 1 --n_particles 1 --deterministic_flag 1 --seed 0
+python -m run_scripts.run_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 \
+--normalize_flag --ensemble_size 1 --n_particles 1 --deterministic_flag 1 --seed 0
 ```
 
 2. PE-TS
 ```
-python -m run_scripts.run_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 --normalize_flag --ensemble_size 5 --n_particles 20 --deterministic_flag 0 --seed 0
+python -m run_scripts.run_pets --dataset halfcheetah --policy_type CEM --n_candidate 200 \
+--normalize_flag --ensemble_size 5 --n_particles 20 --deterministic_flag 0 --seed 0
 ```
 
 ## Model-free RL
@@ -43,12 +49,18 @@ python -m run_scripts.run_pets --dataset halfcheetah --policy_type CEM --n_candi
 
 1. PPO + (Vanilla + CaDM)
 ```
-python -m run_scripts.model_free.run_ppo_cadm --entropy_coeff 0.0 --lr 0.0005 --num_rollouts 10 --num_steps 200 --num_minibatches 4 --policy_type CEM --n_candidate 200 --normalize_flag --deterministic_flag 1 --ensemble_size 1 --n_particles 1 --history_length 10 --future_length 10 --load_path [saved_path] --seed 0
+python -m run_scripts.model_free.run_ppo_cadm --entropy_coeff 0.0 --lr 0.0005 \
+--num_rollouts 10 --num_steps 200 --num_minibatches 4 --policy_type CEM --n_candidate 200 \
+--normalize_flag --deterministic_flag 1 --ensemble_size 1 --n_particles 1 --history_length 10 \
+--future_length 10 --load_path [saved_path] --seed 0
 ```
 
 2. PPO + (PE-TS + CaDM)
 ```
-python -m run_scripts.model_free.run_ppo_cadm --entropy_coeff 0.0 --lr 0.0005 --num_rollouts 10 --num_steps 200 --num_minibatches 4 --policy_type CEM --n_candidate 200 --normalize_flag --deterministic_flag 0 --ensemble_size 5 --n_particles 20 --history_length 10 --future_length 10 --load_path [saved_path] --seed 0
+python -m run_scripts.model_free.run_ppo_cadm --entropy_coeff 0.0 --lr 0.0005 \
+--num_rollouts 10 --num_steps 200 --num_minibatches 4 --policy_type CEM --n_candidate 200 \
+--normalize_flag --deterministic_flag 0 --ensemble_size 5 --n_particles 20 --history_length 10 \
+--future_length 10 --load_path [saved_path] --seed 0
 ```
 
 For example, `saved_path` looks like:
