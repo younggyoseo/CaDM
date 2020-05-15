@@ -1,7 +1,7 @@
 # Context-aware Dynamics Model for Generalization in Model-based Reinforcement Learning
 
 This repository contains code for the paper
-**"[Context-aware Dynamics Model for Generalization in Model-based Reinforcement Learning](https://arxiv.org/abs/2005.06800)"** 
+**"[Context-aware Dynamics Model for Generalization in Model-based Reinforcement Learning](https://sites.google.com/view/cadm)"** 
 
 ## Requirements
 
