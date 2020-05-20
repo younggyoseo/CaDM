@@ -256,7 +256,7 @@ class MLPEnsembleCEMDynamicsModel(Serializable):
                                                     norm_cp_obs_std_var=self.norm_cp_obs_std_ph, ##
                                                     norm_cp_act_mean_var=self.norm_cp_act_mean_ph,
                                                     norm_cp_act_std_var=self.norm_cp_act_std_ph,
-                                                    norm_back_delta_mean_var=self.norm_back_delta_std_ph, ##
+                                                    norm_back_delta_mean_var=self.norm_back_delta_mean_ph, ##
                                                     norm_back_delta_std_var=self.norm_back_delta_std_ph, ##
                                                     # Others
                                                     discrete=self.discrete,
